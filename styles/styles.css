@@ -684,6 +684,11 @@ section {
   cursor: pointer;
 }
 
+.btn-new:hover{
+  background-color: var(--color-secondary);
+  color: black;
+}
+
 button{
   border: none;
   border-radius: 99px;
@@ -914,37 +919,9 @@ button:disabled {
   }
 
 }
-@media screen and (max-width: 1250px) {
-  .courses {
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 6rem;
-  }
 
-  .portfolios {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .header-content .right-header {
-    padding-right: 9rem;
-  }
-
-  .h-shape .image img{
-    height: 90%;
-    width: 40%;
-    margin-top: 2rem;
-  }
-}
-@media screen and (max-width: 660px) {
-  .courses {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .portfolios {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-}
-@media screen and (max-width: 1070px) {
+/*DESKTOP*/
+@media screen and (max-width: 1024px) {
   .about-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -962,8 +939,16 @@ button:disabled {
     font-size: 4.5rem;
   }
 
+  .left-header .image {
+    width: 80% !important;
+    height: 40% !important;
+    margin: 40% auto !important;
+  }
+
 }
-@media screen and (max-width: 970px) {
+
+/*TABLET*/
+@media screen and (max-width: 767px) and (max-width: 1023px)  {
   .container {
     padding: 7rem 6rem;
   }
@@ -981,7 +966,8 @@ button:disabled {
     display: none;
   }
   .left-header .image {
-    width: 90% !important;
+    width: 60% !important;
+    height: 60% !important;
     margin: 40% auto !important;
   }
 
@@ -998,7 +984,9 @@ button:disabled {
   }
 
 }
-@media screen and (max-width: 700px) {
+
+/* SMARTPHONE */
+@media screen and (max-width: 767px) {
   .container {
     padding: 7rem 3rem;
   }
@@ -1023,6 +1011,12 @@ button:disabled {
   }
   .main-title h2 .bg-text {
     font-size: 4rem;
+  }
+
+  .left-header .image {
+    width: 60% !important;
+    height: 60% !important;
+    margin: 40% auto !important;
   }
  
 }
