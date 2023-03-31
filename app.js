@@ -26,6 +26,7 @@ class FormSubmit {
 
     displaySuccess() { <!-- Se a mensagem for enviada com sucesso-->
         this.form.innerHTML = this.settings.success;
+        this.form.reset();
     }
 
     displayError() { <!--Caso ocorra erro no envio da mensagem-->
@@ -47,23 +48,24 @@ class FormSubmit {
         event.target.innerText = "Enviando...";
     }
 
-    async sendForm(event) {
-        try {
-            this.onSubmission(event);
-            await fetch(this.url, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    Accept: "application/json",
-                },
-                body: JSON.stringify(this.getFormObject()),
+    sendForm(event) {
+        this.onSubmission(event);
+
+        fetch(this.url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+            body: JSON.stringify(this.getFormObject()),
+        })
+            .then(() => this.displaySuccess())
+            .catch((error) => {
+                this.displayError();
+                throw new Error(error);
             });
-            this.displaySuccess();
-        } catch (error) {
-            this.displayError();
-            throw new Error(error);
-        }
     }
+
 
     init() {
         if (this.form) this.formButton.addEventListener("click", this.sendForm);
@@ -75,6 +77,6 @@ const formSubmit = new FormSubmit({
     form: "[data-form]",
     button: "[data-button]",
     success: "<h1 class='success'>Mensagem enviada para Igor!</h1>",
-    error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
+    error: "<h1 class='error'>Não foi possível enviar a sua mensagem.</h1>",
 });
 formSubmit.init();
