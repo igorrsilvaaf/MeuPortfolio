@@ -182,8 +182,8 @@ section {
   transition: all 0.5s ease-in-out;
 }
 .header-content .left-header .image img {
-  width: 80%;
-  height: 60%;
+  width: 50%;
+  height: 38%;
   object-fit: cover;
   transition: all 0.3s ease-in-out;
   filter: grayscale(60%);
@@ -640,9 +640,11 @@ section {
   align-items: center;
   overflow: hidden;
 }
+
 .main-btn .btn-text {
   padding: 0 2rem;
 }
+
 .main-btn .btn-icon {
   background-color: var(--color-secondary);
   display: flex;
@@ -661,9 +663,11 @@ section {
   transition: all 0.4s ease-out;
   z-index: -1;
 }
+
 .main-btn:hover {
   transition: all 0.4s ease-out;
 }
+
 .main-btn:hover::before {
   width: 100%;
   height: 100%;
@@ -712,7 +716,6 @@ section {
   transform: translateX(-100%);
   transition: all 0.4s ease-in-out;
 }
-
 
 /*Evendo de envio do forms*/
 button:disabled {
@@ -896,8 +899,8 @@ button:disabled {
   }
 
   .image img{
-    height: 80%;
-    width: 40%;
+    height: 50%;
+    width: 38%;
     margin-top: 2rem;
   }
 }
@@ -934,7 +937,7 @@ button:disabled {
 }
 
 /*DESKTOP*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .about-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -954,14 +957,14 @@ button:disabled {
 
   .left-header .image {
     width: 80% !important;
-    height: 40% !important;
+    height: 53% !important;
     margin: 40% auto !important;
   }
 
 }
 
 /*TABLET*/
-@media screen and (max-width: 767px) and (max-width: 1023px)  {
+@media screen and (max-width: 720px) and (max-width: 1020px)  {
   .container {
     padding: 7rem 6rem;
   }
@@ -980,7 +983,7 @@ button:disabled {
   }
   .left-header .image {
     width: 60% !important;
-    height: 60% !important;
+    height: 58% !important;
     margin: 40% auto !important;
   }
 
@@ -991,15 +994,16 @@ button:disabled {
     margin: 0 auto;
   }
   .right-header .name {
-    font-size: 2.5rem !important;
+    display: none;
+    /* font-size: 2.5rem !important;
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 3rem; */
   }
 
 }
 
 /* SMARTPHONE */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 620px) {
   .container {
     padding: 7rem 3rem;
   }
@@ -1027,9 +1031,10 @@ button:disabled {
   }
 
   .left-header .image {
-    width: 60% !important;
-    height: 60% !important;
-    margin: 40% auto !important;
+    display: none;
+    /* width: 80% !important;
+    height: 70% !important;
+    margin: 40% auto !important; */
   }
  
 }
