@@ -2,7 +2,7 @@
     padding-left: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     header{
         padding: 0 !important;
     }
@@ -92,7 +92,7 @@
     }
 
     .contact-content-con{
-        flex-direction: column;
+        flex-direction: grid;
         .right-contact{
             margin-left: 0;
             margin-top: 2.5rem;
@@ -100,7 +100,7 @@
 
     }
     .contact-content-con .right-contact .i-c-2{
-        flex-direction: column;
+        flex-direction: grid;
     }
     .contact-content-con .right-contact .i-c-2 :last-child{
         margin-left: 0;
