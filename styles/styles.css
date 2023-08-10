@@ -764,7 +764,7 @@ button:disabled {
   padding-left: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   header {
     padding: 0 !important;
   }
@@ -908,6 +908,10 @@ button:disabled {
     height: 50%;
     width: 38%;
     margin-top: 2rem;
+  }
+
+  .btn-new{
+    width: 100%;
   }
 }
 
