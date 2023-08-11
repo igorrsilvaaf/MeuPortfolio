@@ -424,7 +424,7 @@ section {
 .portfolios .portfolio-item .hover-items {
   width: 100%;
   height: 100%;
-  background-color: var(--color-secondary);
+  background-color: #d1cfb86c;
   position: absolute;
   left: 0;
   top: 0;
@@ -437,17 +437,21 @@ section {
   transform: scale(0);
   transition: all 0.4s ease-in-out;
 }
+
 .portfolios .portfolio-item .hover-items h3 {
-  font-size: 1.2rem;
-  color: var(--color-white);
-  margin-bottom: 1.8rem;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
 
 }
+
 .portfolios .portfolio-item .hover-items .icons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .portfolios .portfolio-item .hover-items .icons .icon {
   background-color: var(--color-primary);
   border-radius: 50%;
@@ -460,14 +464,17 @@ section {
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
+
 .portfolios .portfolio-item .hover-items .icons .icon i {
   font-size: 1.5rem;
   color: var(--color-white);
   margin: 0 1rem;
 }
+
 .portfolios .portfolio-item .hover-items .icons .icon:hover {
   background-color: var(--color-white);
 }
+
 .portfolios .portfolio-item .hover-items .icons .icon:hover i {
   color: var(--color-primary);
 }
