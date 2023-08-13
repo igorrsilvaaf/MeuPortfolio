@@ -339,7 +339,7 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 30%;
+  width: 40%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .css {
@@ -347,11 +347,15 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .js {
-  width: 20%;
+  width: 25%;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .react {
-  width: 10%;
+.about-stats .progress-bars .progress-bar .progress-con .progress .java {
+  width: 15%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .sass {
+  width: 35%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .node {
@@ -359,7 +363,19 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
+  width: 13%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .golang {
   width: 10%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .bd {
+  width: 76%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .delphi {
+  width: 42%;
 }
 
 .stat-title {
