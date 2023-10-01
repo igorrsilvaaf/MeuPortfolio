@@ -174,20 +174,18 @@ section {
   clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
 }
 .header-content .left-header .image {
-  
-  height: 80%;
-  width: 60%;
-  margin-left: 3rem;
-  margin-top: 15rem;
+  height: 100%;
+  width: 100%;
+  margin-top: 35rem;
   transition: all 0.5s ease-in-out;
 }
 .header-content .left-header .image img {
-  width: 50%;
-  height: 38%;
+  width: 600px;
+  height: 600px;
   object-fit: cover;
   transition: all 0.3s ease-in-out;
   filter: grayscale(60%);
-  border-radius: 50%;
+  border-radius: 2%;
 }
 .header-content .left-header .image img:hover {
   filter: grayscale(0);
@@ -884,39 +882,43 @@ button:disabled {
 }
 
 @media screen and (max-width: 768px) {
+  /* Header */
   header {
-    padding: 0 !important;
+    padding: 0;
   }
-  
+
+  /* Theme Button */
   .theme-btn {
     width: 50px;
     height: 50px;
   }
 
+  /* Header Content */
   .header-content {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
+    padding-left: 6rem;
   }
 
-  .left-header .h-shape{
+  /* Left Header */
+  .left-header .h-shape,
+  .left-header .image {
     display: none;
   }
 
-  .left-header .image{
-    display: none;
-  }
-
+  /* Right Header */
   .right-header {
     grid-row: 1;
-    padding-right: 0rem !important;
+    padding-right: 0;
     width: 100%;
     margin: 0 auto;
   }
 
   .header-content .right-header .name {
     font-size: 2.2rem;
-}
+  }
 
+  /* Controls */
   .controls {
     top: auto;
     bottom: 0;
@@ -925,7 +927,7 @@ button:disabled {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    background-color: #191622ec;
+    background-color: rgba(25, 22, 34, 0.92);
   }
 
   .controls .control {
@@ -934,71 +936,82 @@ button:disabled {
     height: 40px;
   }
 
+  /* About Container */
   .about-container {
     grid-template-columns: repeat(1, 1fr);
   }
 
   .about-container .right-about {
-    grid-template-columns: repeat(1, 1fr);
+    grid-column: 1;
     padding-top: 2.5rem;
   }
 
-  .about-container .left-about {
-    padding-right: 0;
-  }
-  
   .about-container .left-about p {
-    padding-left: 0;
+    width: 86%;
+    text-align: justify;
   }
 
-  .container about .main-title h2{
+  .about-container .left-about h4{
+    font-size: 26px;
+  }
+
+  /* Container About */
+  .container.about .main-title h2 {
     color: var(--color-secondary);
   }
 
-  .container about .main-title .bg-text{
+  .container.about .main-title .bg-text {
     display: none;
   }
 
+  /* Timeline */
   .timeline {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
 
+  /* Container */
   .container {
-    padding: 2rem 2.5rem !important;
+    padding: 2rem 2.5rem;
   }
 
+  /* About Stats */
   .about-stats .progress-bars {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  /* Portfolios */
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
     margin-top: 1rem;
   }
 
+  /* Courses */
   .courses {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
 
-  .courses-content .bg-text{
+  .courses-content .bg-text {
     font-size: 2.8rem;
     margin-top: -1.2rem;
     display: none;
   }
 
-  .courses-content .main-title h2{
+  .courses-content .main-title h2 {
     color: var(--color-secondary);
   }
 
+  /* Contact Content Container */
   .contact-content-con {
     flex-direction: column;
   }
+
   .contact-content-con .right-contact {
     margin-left: 0;
     margin-top: 2.5rem;
+    margin-bottom: 4rem;
   }
 
   .contact-content-con .right-contact .i-c-2 {
@@ -1010,10 +1023,7 @@ button:disabled {
     margin-top: 1.5rem;
   }
 
-  .contact-content-con .right-contact {
-    margin-bottom: 4rem;
-  }
-
+  /* Contact Item */
   .contact-item {
     flex-direction: row;
     margin: 1rem 0;
@@ -1032,6 +1042,7 @@ button:disabled {
     grid-template-columns: 1fr;
   }
 
+  /* Main Title */
   .main-title h2 {
     font-size: 2rem;
   }
@@ -1039,18 +1050,45 @@ button:disabled {
   .main-title h2 span {
     font-size: 2.3rem;
   }
-  
+
   .main-title h2 .bg-text {
     display: none;
   }
 
-  .image img{
+  /* Image */
+  .image img {
     height: 50%;
     width: 38%;
     margin-top: 2rem;
   }
 
-  .btn-new{
+  /* Button */
+  .btn-new {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+    .image img{
+      width: 65px;
+      height: 65px;
+      margin-left: 5rem;
+      margin-top: -85px;
+    }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-container .left-about p {
+    width: 90%;
+    text-align: justify;
+    order: 1;
+  }
+
+  .about-container .right-about {
+    grid-column: 1;
+    padding-bottom: 6rem;
   }
 }
