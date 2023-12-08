@@ -176,11 +176,12 @@ section {
 .header-content .left-header .image {
   height: 100%;
   width: 100%;
-  margin-top: 35rem;
+  margin-left: 10rem;
+  margin-top: 20rem;
   transition: all 0.5s ease-in-out;
 }
 .header-content .left-header .image img {
-  width: 400px;
+  width: 350px;
   height: 600px;
   object-fit: cover;
   transition: all 0.3s ease-in-out;
@@ -881,32 +882,27 @@ button:disabled {
   padding-left: 0;
 }
 
-@media screen and (max-width: 768px) {
-  /* Header */
+/* @media screen and (max-width: 768px) {
   header {
     padding: 0;
   }
 
-  /* Theme Button */
   .theme-btn {
     width: 50px;
     height: 50px;
   }
 
-  /* Header Content */
   .header-content {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
     padding-left: 6rem;
   }
 
-  /* Left Header */
   .left-header .h-shape,
   .left-header .image {
     display: none;
   }
 
-  /* Right Header */
   .right-header {
     grid-row: 1;
     padding-right: 0;
@@ -918,7 +914,6 @@ button:disabled {
     font-size: 2.2rem;
   }
 
-  /* Controls */
   .controls {
     top: auto;
     bottom: 0;
@@ -936,7 +931,6 @@ button:disabled {
     height: 40px;
   }
 
-  /* About Container */
   .about-container {
     grid-template-columns: repeat(1, 2fr);
   }
@@ -962,7 +956,6 @@ button:disabled {
     text-transform: uppercase;
   }
 
-  /* Container About */
   .container.about .main-title h2 {
     color: var(--color-secondary);
   }
@@ -971,30 +964,25 @@ button:disabled {
     display: none;
   }
 
-  /* Timeline */
   .timeline {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
 
-  /* Container */
   .container {
     padding: 2rem 2.5rem;
   }
 
-  /* About Stats */
   .about-stats .progress-bars {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  /* Portfolios */
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
     margin-top: 1rem;
   }
 
-  /* Courses */
   .courses {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
@@ -1010,7 +998,6 @@ button:disabled {
     color: var(--color-secondary);
   }
 
-  /* Contact Content Container */
   .contact-content-con {
     flex-direction: column;
   }
@@ -1030,7 +1017,6 @@ button:disabled {
     margin-top: 1.5rem;
   }
 
-  /* Contact Item */
   .contact-item {
     flex-direction: row;
     margin: 1rem 0;
@@ -1049,7 +1035,6 @@ button:disabled {
     grid-template-columns: 1fr;
   }
 
-  /* Main Title */
   .main-title h2 {
     font-size: 2rem;
   }
@@ -1062,14 +1047,213 @@ button:disabled {
     display: none;
   }
 
-  /* Image */
   .image img {
     height: 50%;
     width: 38%;
     margin-top: 2rem;
   }
 
-  /* Button */
+  .btn-new {
+    width: 100%;
+  }
+} */
+
+/* Quando a largura da tela for menor ou igual a 768px, as seguintes alterações de estilo serão aplicadas: */
+@media screen and (max-width: 768px) {
+  /* Estilos para o cabeçalho (header) */
+  header {
+    padding: 0;
+  }
+
+  /* Estilos para o botão de tema (theme-btn) */
+  .theme-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Estilos para o conteúdo do cabeçalho (header-content) */
+  .header-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+    padding-left: 6rem;
+  }
+
+  /* Oculta elementos específicos em .left-header */
+  .left-header .h-shape,
+  .left-header .image {
+    display: none;
+  }
+
+  /* Estilos para o conteúdo à direita (right-header) do cabeçalho */
+  .right-header {
+    grid-row: 1;
+    padding-right: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Estilos para o nome (name) no cabeçalho */
+  .header-content .right-header .name {
+    font-size: 2.2rem;
+  }
+
+  /* Estilos para controles, possivelmente botões */
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: rgba(25, 22, 34, 0.92);
+  }
+
+  /* Estilos para cada controle (control) */
+  .controls .control {
+    margin: 1rem 0.4rem;
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Estilos para a classe .about-container */
+  .about-container {
+    grid-template-columns: repeat(1, 2fr);
+  }
+
+  /* Estilos para .right-about, dentro de .about-container */
+  .about-container .right-about {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 2.5rem;
+  }
+
+  /* Estilos para .left-about, dentro de .about-container */
+  .about-container .left-about {
+    text-align: justify;
+    padding-left: 4rem;
+  }
+
+  /* Estilos para parágrafos (p) dentro de .left-about */
+  .about-container .left-about p {
+    line-height: 2rem;
+    padding: 1rem;
+    color: var(--color-grey-1);
+  }
+
+  /* Estilos para cabeçalhos (h4) dentro de .left-about */
+  .about-container .left-about h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  /* Estilos para um título principal (main-title h2) dentro de um contêiner (container.about) */
+  .container.about .main-title h2 {
+    color: var(--color-secondary);
+  }
+
+  /* Oculta um elemento de texto de fundo (bg-text) dentro de .main-title */
+  .container.about .main-title .bg-text {
+    display: none;
+  }
+
+  /* Estilos para uma linha do tempo (timeline) */
+  .timeline {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+  }
+
+  /* Estilos para um contêiner (container) */
+  .container {
+    padding: 2rem 2.5rem;
+  }
+
+  /* Estilos para barras de progresso dentro de .about-stats */
+  .about-stats .progress-bars {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Estilos para portfólios (portfolios) */
+  .portfolios {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+    margin-top: 1rem;
+  }
+
+  /* Estilos para cursos (courses) */
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+  }
+
+  /* Estilos para um elemento de texto de fundo (bg-text) em .courses-content */
+  .courses-content .bg-text {
+    font-size: 2.8rem;
+    margin-top: -1.2rem;
+    display: none;
+  }
+
+  /* Estilos para o título principal (main-title h2) no conteúdo de cursos */
+  .courses-content .main-title h2 {
+    color: var(--color-secondary);
+  }
+
+  /* Estilos para o conteúdo de contato (contact-content-con) */
+  .contact-content-con {
+    flex-direction: column;
+  }
+
+  /* Estilos para a coluna de contato à direita (right-contact) em .contact-content-con */
+  .contact-content-con .right-contact {
+    margin-left: 0;
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
+  }
+
+  /* Estilos para um item de contato (contact-item) */
+  .contact-item {
+    flex-direction: row;
+    margin: 1rem 0;
+  }
+
+  /* Estilos para parágrafos (p) em itens de contato */
+  .contact-item p {
+    font-size: 15px;
+    color: var(--color-grey-2);
+  }
+
+  /* Estilos para elementos <span> em itens de contato */
+  .contact-item span {
+    font-size: 15px;
+  }
+
+  /* Estilos para um ícone (icon) dentro de itens de contato */
+  .contact-item .icon {
+    grid-template-columns: 1fr;
+  }
+
+  /* Estilos para um título principal (main-title h2) */
+  .main-title h2 {
+    font-size: 2rem;
+  }
+
+  /* Estilos para uma parte destacada (span) dentro do título principal (main-title h2) */
+  .main-title h2 span {
+    font-size: 2.3rem;
+  }
+
+  /* Oculta um elemento de texto de fundo (bg-text) dentro do título principal (main-title h2) */
+  .main-title h2 .bg-text {
+    display: none;
+  }
+
+  /* Estilos para uma imagem (img) dentro de um elemento (image) */
+  .image img {
+    height: 50%;
+    width: 38%;
+    margin-top: 2rem;
+  }
+
+  /* Estilos para um botão (btn-new) */
   .btn-new {
     width: 100%;
   }
