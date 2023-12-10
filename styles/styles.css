@@ -462,7 +462,7 @@ section {
 /* Portifolio */
 .portfolios {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
 }
@@ -484,7 +484,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 2rem;
 }
 
 .portfolios .portfolio-item .hover-items {
@@ -494,7 +494,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  border-radius: 15px;
+  border-radius: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -883,7 +883,7 @@ button:disabled {
 }
 
 /* Quando a largura da tela for menor ou igual a 768px, as seguintes alterações de estilo serão aplicadas: */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px min-width: 800px) {
   /* Estilos para o cabeçalho (header) */
   header {
     padding: 0;
@@ -1084,13 +1084,6 @@ button:disabled {
   /* Oculta um elemento de texto de fundo (bg-text) dentro do título principal (main-title h2) */
   .main-title h2 .bg-text {
     display: none;
-  }
-
-  /* Estilos para uma imagem (img) dentro de um elemento (image) */
-  .image img {
-    height: 50%;
-    width: 38%;
-    margin-top: 2rem;
   }
 
   /* Estilos para um botão (btn-new) */
