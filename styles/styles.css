@@ -883,7 +883,7 @@ button:disabled {
 }
 
 /* Quando a largura da tela for menor ou igual a 768px, as seguintes alterações de estilo serão aplicadas: */
-@media screen and (max-width: 768px min-width: 800px) {
+@media screen and (max-width: 768px) {
   /* Estilos para o cabeçalho (header) */
   header {
     padding: 0;
