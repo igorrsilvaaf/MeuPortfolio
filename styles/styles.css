@@ -337,44 +337,38 @@ section {
   width: 60%;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .html {
+.about-stats .progress-bars .progress-bar .progress-con .progress .BI {
   width: 40%;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 25%;
-}
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .js {
-  width: 25%;
+.about-stats .progress-bars .progress-bar .progress-con .progress .trello {
+  width: 50%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .java {
-  width: 15%;
+  width: 30%;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .sass {
-  width: 35%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .node {
-  width: 2%;
+.about-stats .progress-bars .progress-bar .progress-con .progress .jira {
+  width: 40%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
-  width: 13%;
+  width: 40%;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .golang {
-  width: 10%;
-}
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .bd {
   width: 76%;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .delphi {
-  width: 42%;
+.about-stats .progress-bars .progress-bar .progress-con .progress .exel {
+  width: 70%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .git {
+  width: 100%;
 }
 
 .stat-title {
