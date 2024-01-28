@@ -142,9 +142,11 @@ section {
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.1s ease-in-out;
 }
+
 .theme-btn:active {
   transform: translateY(-3px);
 }
+
 .theme-btn i {
   font-size: 1.4rem;
   color: var(--color-grey-2);
@@ -885,8 +887,12 @@ button:disabled {
 
   /* Estilos para o botão de tema (theme-btn) */
   .theme-btn {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .theme-btn i {
+    font-size: 1.1rem;
   }
 
   /* Estilos para o conteúdo do cabeçalho (header-content) */
@@ -908,8 +914,9 @@ button:disabled {
     line-height: 2.8rem;
   }
 
-  .header-content .right-header h1 .name{
-    text-align: justify;
+  .header-content .right-header .name{
+    text-align: left;
+    font-size: 34px;
   }
 
   .right-header p{
@@ -1036,7 +1043,7 @@ button:disabled {
     flex-direction: column;
   }
 
-  /* Estilos para a coluna de contato à direita (right-contact) em .contact-content-con */
+  /* Estilos para a coluna de contato à direita*/
   .contact-content-con .right-contact {
     margin-left: 0;
     margin-top: 2.5rem;
