@@ -178,7 +178,7 @@ section {
 .header-content .left-header .image {
   height: 100%;
   width: 100%;
-  margin-left: 10rem;
+  margin-left: 3rem;
   margin-top: 20rem;
   transition: all 0.5s ease-in-out;
 }
@@ -577,7 +577,7 @@ section {
 .courses .certificates:hover img {
   filter: grayscale(0);
   transform: scale(1.1);
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
 }
 
 .courses .certificates img {
@@ -613,8 +613,6 @@ section {
   padding-bottom: 1rem;
 }
 
-
-/* Contact */
 
 .contact-content-con {
   display: flex;
@@ -884,7 +882,6 @@ button:disabled {
     padding: 0;
   }
 
-  /* Estilos para o botão de tema (theme-btn) */
   .theme-btn {
     width: 40px;
     height: 40px;
@@ -913,6 +910,7 @@ button:disabled {
   }
 
   .header-content .left-header .image img{
+    max-width: 100%;
     width: 250px;
     height: 250px;
     object-fit: cover;
@@ -942,7 +940,6 @@ button:disabled {
     align-items: center;
   }
 
-  /* Estilos para controles, possivelmente botões */
   .controls {
     top: auto;
     bottom: 0;
@@ -954,32 +951,27 @@ button:disabled {
     background-color: rgba(25, 22, 34, 0.92);
   }
 
-  /* Estilos para cada controle (control) */
   .controls .control {
     margin: 1rem 0.4rem;
     width: 40px;
     height: 40px;
   }
 
-  /* Estilos para a classe .about-container */
   .about-container {
     grid-template-columns: repeat(1, 2fr);
   }
 
-  /* Estilos para .right-about, dentro de .about-container */
   .about-container .right-about {
     grid-template-columns: repeat(1, 1fr);
     padding-top: 2.5rem;
   }
 
-  /* Estilos para .left-about, dentro de .about-container */
   .about-container .left-about {
     text-align: justify;
     padding-left: 1rem;
     width: 100%;
   }
 
-  /* Estilos para parágrafos (p) dentro de .left-about */
   .about-container .left-about {
     line-height: 1.4rem;
     padding: 1rem;
@@ -991,148 +983,94 @@ button:disabled {
     box-sizing: border-box;
   }
 
-  /* Estilos para cabeçalhos (h4) dentro de .left-about */
   .about-container .left-about h4 {
     font-size: 20px;
     text-transform: uppercase;
   }
 
-  /* Estilos para um título principal (main-title h2) dentro de um contêiner (container.about) */
   .container.about .main-title h2 {
     color: var(--color-secondary);
   }
 
-  /* Oculta um elemento de texto de fundo (bg-text) dentro de .main-title */
   .container.about .main-title .bg-text {
     display: none;
   }
 
-  /* Estilos para uma linha do tempo (timeline) */
   .timeline {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
 
-  /* Estilos para um contêiner (container) */
   .container {
     padding: 2rem 2.5rem;
   }
 
-  /* Estilos para barras de progresso dentro de .about-stats */
   .about-stats .progress-bars {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  /* Estilos para portfólios (portfolios) */
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
     margin-top: 1rem;
   }
 
-  /* Estilos para cursos (courses) */
   .courses {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
 
-  /* Estilos para um elemento de texto de fundo (bg-text) em .courses-content */
   .courses-content .bg-text {
     font-size: 2.8rem;
     margin-top: -1.2rem;
     display: none;
   }
 
-  /* Estilos para o título principal (main-title h2) no conteúdo de cursos */
   .courses-content .main-title h2 {
     color: var(--color-secondary);
   }
 
-  /* Estilos para o conteúdo de contato (contact-content-con) */
   .contact-content-con {
     flex-direction: column;
   }
 
-  /* Estilos para a coluna de contato à direita*/
   .contact-content-con .right-contact {
     margin-left: 0;
     margin-top: 2.5rem;
     margin-bottom: 4rem;
   }
 
-  /* Estilos para um item de contato (contact-item) */
   .contact-item {
     flex-direction: row;
     margin: 1rem 0;
   }
 
-  /* Estilos para parágrafos (p) em itens de contato */
   .contact-item p {
     font-size: 15px;
     color: var(--color-grey-2);
   }
 
-  /* Estilos para elementos <span> em itens de contato */
   .contact-item span {
     font-size: 15px;
   }
 
-  /* Estilos para um ícone (icon) dentro de itens de contato */
   .contact-item .icon {
     grid-template-columns: 1fr;
   }
 
-  /* Estilos para um título principal (main-title h2) */
   .main-title h2 {
     font-size: 2rem;
   }
 
-  /* Estilos para uma parte destacada (span) dentro do título principal (main-title h2) */
   .main-title h2 span {
     font-size: 2.3rem;
   }
 
-  /* Oculta um elemento de texto de fundo (bg-text) dentro do título principal (main-title h2) */
   .main-title h2 .bg-text {
     display: none;
   }
 
-  /* Estilos para um botão (btn-new) */
   .btn-new {
     width: 100%;
   }
-}
-
-@media (prefers-color-scheme: dark){
-    .theme-btn {
-        --color-primary: #191622;
-        --color-secondary: #d1c757;
-        --color-white: #dbe1e8;
-        --color-black: #000;
-        --color-grey0: #f8f8f8;
-        --color-grey-1: #dbe1e8;
-        --color-grey-2: #b2becd;
-        --color-grey-3: #6c7983;
-        --color-grey-4: #454e56;
-        --color-grey-5: #2a2e35;
-        --color-grey-6: #12181b;
-        --br-sm-2: 14px;
-        --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
-    }
-}
-
-@media (prefers-color-scheme: light){
-    .theme-btn {
-        --color-primary: #eef8f8;
-        --color-secondary: #d1c757;
-        --color-white: #000000;
-        --color-black: #000;
-        --color-grey0: #f8f8f8;
-        --color-grey-1: #6c7983;
-        --color-grey-2: #c4ced5; /*FUNDO dos campos de mensagem*/
-        --color-grey-3: #6c7983;
-        --color-grey-4: #454e56;
-        --color-grey-5: #150e2493;
-        --color-grey-6: #070808;
-    }
 }

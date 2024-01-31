@@ -9,8 +9,8 @@
     });
     document.querySelector(".theme-btn").addEventListener("click", () => {
         document.body.classList.toggle("light-mode");
-        var moonIcon = document.querySelector(".moon-icon");
-        var sunIcon = document.querySelector(".sun-icon");
+        const moonIcon = document.querySelector(".moon-icon");
+        const sunIcon = document.querySelector(".sun-icon");
         if (document.body.classList.contains('light-mode')) {
             moonIcon.style.display = 'none';
             sunIcon.style.display = 'inline-block';
