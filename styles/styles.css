@@ -183,12 +183,11 @@ section {
   transition: all 0.5s ease-in-out;
 }
 .header-content .left-header .image img {
-  width: 350px;
+  width: 500px;
   height: 600px;
   object-fit: cover;
   transition: all 0.3s ease-in-out;
   filter: grayscale(60%);
-  border-radius: 2%;
 }
 .header-content .left-header .image img:hover {
   filter: grayscale(0);
@@ -895,20 +894,31 @@ button:disabled {
     font-size: 1.1rem;
   }
 
-  /* Estilos para o conteúdo do cabeçalho (header-content) */
   .header-content {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
     /* padding-left: 6rem; */
   }
 
-  /* Oculta elementos específicos em .left-header */
-  .left-header .h-shape,
-  .left-header .image {
+  .left-header .h-shape {
     display: none;
   }
 
-  /* Estilos para o conteúdo à direita (right-header) do cabeçalho */
+  .header-content .left-header .image{
+    height: 100%;
+    width: 100%;
+    margin-left: 4.5rem;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+  }
+
+  .header-content .left-header .image img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    filter: grayscale(60%);
+  }
+
   .header-content .right-header {
     padding: 2.8rem;
     line-height: 2.8rem;
@@ -1091,4 +1101,38 @@ button:disabled {
   .btn-new {
     width: 100%;
   }
+}
+
+@media (prefers-color-scheme: dark){
+    .theme-btn {
+        --color-primary: #191622;
+        --color-secondary: #d1c757;
+        --color-white: #dbe1e8;
+        --color-black: #000;
+        --color-grey0: #f8f8f8;
+        --color-grey-1: #dbe1e8;
+        --color-grey-2: #b2becd;
+        --color-grey-3: #6c7983;
+        --color-grey-4: #454e56;
+        --color-grey-5: #2a2e35;
+        --color-grey-6: #12181b;
+        --br-sm-2: 14px;
+        --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+    }
+}
+
+@media (prefers-color-scheme: light){
+    .theme-btn {
+        --color-primary: #eef8f8;
+        --color-secondary: #d1c757;
+        --color-white: #000000;
+        --color-black: #000;
+        --color-grey0: #f8f8f8;
+        --color-grey-1: #6c7983;
+        --color-grey-2: #c4ced5; /*FUNDO dos campos de mensagem*/
+        --color-grey-3: #6c7983;
+        --color-grey-4: #454e56;
+        --color-grey-5: #150e2493;
+        --color-grey-6: #070808;
+    }
 }
