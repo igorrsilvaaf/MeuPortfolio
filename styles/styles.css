@@ -908,8 +908,8 @@ button:disabled {
     height: 100%;
     width: 100%;
     margin-left: 4.4rem;
-    margin-top: -0.90rem;
-    margin-bottom: -1.2rem;
+    margin-top: 1rem;
+    margin-bottom: -1.6rem;
   }
 
   .header-content .left-header .image img{
